@@ -204,3 +204,29 @@ value of c Khaled, type System.String
 | It cannot be used for properties or returning values from the function. It can only used as a local variable in function. | It can be used for properties or returning values from the function. |
 
 
+## Nullable type
+In C#, a nullable type is a special type that allows a value type (such as int, double, bool, etc.) to hold a `null` value. This is useful when you want to represent the absence of a value, which is something that reference types (like string or object) can naturally do by default, but value types cannot.
+
+### Using Nullable Types
+You can check if a nullable type has a value and retrieve that value using the following properties and methods:
+
+- `.HasValue`: Returns `true` if the nullable type contains a value; otherwise, `false`.
+- `.Value`: Gets the value of the nullable type if it has one; otherwise, it throws an `InvalidOperationException`.
+- `GetValueOrDefault()`: Returns the value if it exists; otherwise, returns the default value for the underlying type (e.g., `0` for `int?`).
+
+#### Example
+```csharp
+// to declare a nullable type, you append a `?` to the value type.
+int? num = 5;
+
+if (num.HasValue)
+{
+    Console.WriteLine(num.Value);  // Output: 5
+}
+else
+{
+    Console.WriteLine("number is null");
+}
+
+int defaultValue = num.GetValueOrDefault();  // defaultValue is 5
+```
