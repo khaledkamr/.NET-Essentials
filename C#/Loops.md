@@ -4,6 +4,7 @@ Looping in C# is a way to execute a statement or a set of statements multiple ti
 - while loop
 - for loop
 - do while loop
+- foreach loop
 
 ## while loop
 The test condition is given in the beginning of the loop and all statements are executed till the given Boolean condition satisfies when the condition becomes false, the control will be out from the while loop.
@@ -93,6 +94,38 @@ class dowhileloop
 csharp
 ```
 
+## foreach loop
+The foreach loop is used to iterate over the elements of the collection. The collection may be an array or a list. It executes for each element present in the array.
+
+```csharp
+using System; 
+class cls 
+{ 
+	static public void Main() 
+	{ 
+		Console.WriteLine("Print array:"); 
+
+		int[] a_array = new int[] { 1, 2, 3, 4, 5, 6, 7 }; 
+
+		// foreach loop begin it will run till the last element of the array 
+		foreach(int items in a_array) 
+		{ 
+			Console.WriteLine(items); 
+		} 
+	} 
+} 
+```
+#### Output:
+```
+Print array:
+1
+2
+3
+4
+5
+6
+7
+```
 ## Infinite Loops
 The loops in which the test condition does not evaluate false ever tend to execute statements forever until an external force is used to end it and thus they are known as infinite loops.
 
