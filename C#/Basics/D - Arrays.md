@@ -185,3 +185,130 @@ namespace geeksforgeeks
 Element [0] Array: 1 3 5 7 9 
 Element [1] Array: 2 4 6 8 
 ```
+# Array methods
+
+## Clear()
+This method is used to set a range of elements in an array to the default value of each element type.
+
+### Syntax:
+```
+public static void Clear (Array array, int index, int length);
+```
+### Example:
+```csharp
+int[] arr = new int[5] {10,20,30,40,50};
+Array.Clear(arr,0,arr.Length);
+        
+Console.WriteLine("Array After Operation: ");
+foreach(int n in arr)
+{
+    Console.WriteLine(n, " ");
+}
+```
+#### Output
+```
+Array After Operation: 
+0 0 0 0 0
+```
+## CopyTo()
+Copies all the elements of the current one-dimensional array to the specified one-dimensional array.
+
+### Syntax: 
+```
+array.CopyTo(targetArray, index);
+```
+### Example:
+```csharp
+int[] original = new int[] { 1, 2, 3, 4, 5 };
+int[] copied = new int[original.Length];
+
+original.CopyTo(copied, 0);
+
+foreach(int n in copied)
+{
+    Console.Write(n + " ");
+}
+```
+#### Output
+```
+1 2 3 4 5 
+```
+
+## Any()
+is used to determine if any elements in a collection or sequence satisfy a specified condition. It returns true if at least one element meets the condition, and false otherwise.
+
+```csharp
+using System.Linq;
+
+int[] numbers = new int[0];
+        
+if (numbers.Any())
+{
+    Console.WriteLine("The array is not empty.");
+}
+else
+{
+    Console.WriteLine("The array is empty.");
+}
+```
+#### Output
+```
+The array is empty.
+```
+## Find()
+is used to find the first element in an array that satisfies a specified condition. It takes a predicate function as an argument, which determines whether an element meets the condition. If an element is found, Find() returns it; otherwise, it returns the default value of the array's element type.
+
+```csharp
+int[] numbers = { 1, 2, 3, 4, 5 };
+
+int evenNumber = Array.Find(numbers, n => n % 2 == 0);
+
+if (evenNumber != 0)
+{
+    Console.WriteLine($"The first even number is: {evenNumber}");
+}
+else
+{
+    Console.WriteLine("There are no even numbers in the array.");
+}
+```
+#### Output
+```
+The first even number is: 2
+```
+
+## Sort()
+is used to sort the elements of an array in ascending order. It takes an array as input and modifies the array in place, meaning it doesn't create a new array.
+
+```csharp
+int[] numbers = { 5, 2, 9, 1, 7 };
+
+Array.Sort(numbers);
+
+foreach (int number in numbers)
+{
+    Console.Write(number + " ");
+}
+```
+#### Output
+```
+1 2 5 7 9 
+```
+
+## Reverse()
+is used to reverse the order of elements in an array. It takes the array as an argument and modifies the original array in place.
+
+```csharp
+int[] numbers = { 1, 2, 3, 4, 5 };
+
+Array.Reverse(numbers);
+
+foreach (int number in numbers)
+{
+    Console.Write(number + " ");
+}
+```
+#### Output
+```
+5 4 3 2 1
+```
