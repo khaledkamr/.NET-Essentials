@@ -56,7 +56,6 @@ There might be certain situations the user want to execute a method but sometime
 - Out Parameters
 - Default or Optional Parameters
 - Dynamic Parameters
-- Value Parameters
 - Params
 
 ## Named Parameters
