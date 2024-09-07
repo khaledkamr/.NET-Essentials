@@ -2,10 +2,10 @@
 
 C# uses control statements to control the flow of execution of program based on certain conditions. These are used to cause the flow of execution to advance and branch based on changes to the state of a program.
 ### The conditional statements of C#: 
-- if
-- if else
-- if else if
-- Switch
+- [if](#if-statement)
+- [if else](#If-else-Statement)
+- [if else if](#if-else-if-statement)
+- [Switch](#switch)
 
 ## if statement
 ```csharp
