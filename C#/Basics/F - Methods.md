@@ -51,12 +51,12 @@ The Value of the sum is 35
 # Method Parameters
 There might be certain situations the user want to execute a method but sometimes that method requires some valuable inputs in order to execute and complete its tasks. These input values are known as Parameters in computer language terms.
 ### C# contains the following types of Method Parameters:
-- Named Parameters
-- Ref Parameters
-- Out Parameters
-- Default or Optional Parameters
-- Dynamic Parameters
-- Params
+- [Named Parameters](#named-parameters)
+- [Ref Parameters](#ref-parameters)
+- [Out Parameters](#out-parameters)
+- [Default or Optional Parameters](#default-or-optional-parameters)
+- [Dynamic Parameters](#dynamic-parameters)
+- [Params](#params)
 
 ## Named Parameters
 Named parameters in C# 4.0 allow you to specify argument values by name rather than position. This makes code more readable, especially with many parameters. However, named parameters must follow positional arguments.
