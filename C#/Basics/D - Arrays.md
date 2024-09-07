@@ -2,6 +2,10 @@
 
 An array is a group of like-typed variables that are referred to by a common name. And each data item is called an element of the array. The data types of the elements may be any valid data type like char, int, float, etc. and the elements are stored in a contiguous location. Length of the array specifies the number of elements present in the array. In C# the allocation of memory for the arrays is done dynamically. And arrays are kinds of objects, therefore it is easy to find their size using the predefined functions. The variables in the array are ordered and each has an index beginning from 0. Arrays in C# work differently than they do in C/C++.
 
+- [Multidimensional Arrays](#multidimensional-arrays)
+- [Jagged Arrays](#jagged-arrays)
+- [Array methods](#array-methods)
+
 ### Important Points to Remember About Arrays in C#
 - In C#, all arrays are dynamically allocated.
 - Since arrays are objects in C#, we can find their length using member length. This is different from C/C++ where we find length using sizeof operator.
@@ -186,6 +190,13 @@ Element [0] Array: 1 3 5 7 9
 Element [1] Array: 2 4 6 8 
 ```
 # Array methods
+
+- [Clear()](#clear)
+- [CopyTo()](#copyto)
+- [Any()](#any)
+- [Find()](#find)
+- [Sort()](#sort)
+- [Reverse()](#reverse)
 
 ## Clear()
 This method is used to set a range of elements in an array to the default value of each element type.
