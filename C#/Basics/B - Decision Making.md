@@ -5,7 +5,7 @@ C# uses control statements to control the flow of execution of program based on 
 - [if](#if-statement)
 - [if else](#If-else-Statement)
 - [if else if](#if-else-if-statement)
-- [Switch](#switch)
+- [Switch](#switch-statement)
 
 ## if statement
 ```csharp
