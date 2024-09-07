@@ -1,10 +1,10 @@
 # Loops
 Looping in C# is a way to execute a statement or a set of statements multiple times depending on the result of the condition to be evaluated to execute statements. The result condition should be true to execute statements within loops.
 ### loops in C#:
-- while loop
-- for loop
-- do while loop
-- foreach loop
+- [while loop](#while-loop)
+- [for loop](#for-loop)
+- [do while loop](#do-while-loop)
+- [foreach loop](#foreach-loop)
 
 ## while loop
 The test condition is given in the beginning of the loop and all statements are executed till the given Boolean condition satisfies when the condition becomes false, the control will be out from the while loop.
