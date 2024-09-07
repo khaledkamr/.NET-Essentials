@@ -1,8 +1,8 @@
 # Data Types
 Data types in C# is mainly divided into two categories
 
-- [Value Data Types] (## Value Data Type)
-- [Reference Data Types] (## Reference data Type)
+- [Value Data Types](#Value Data Type)
+- [Reference Data Types](#Reference data Type)
 
 ## Value Data Type
 In C#, the Value Data Types will directly store the variable value in memory and it will also accept both signed and unsigned literals. The derived class for these data types are System.ValueType.
