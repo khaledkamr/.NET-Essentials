@@ -2,6 +2,10 @@
 
 In C#, a string is a sequence of characters enclosed in double quotes (""). It's a fundamental data type used to represent text.
 
+- [string methods](#string-methods)
+- [string formatting](#string-formatting)
+- [string builder](#string-builder)
+
 ### Key points about strings in C#:
 
 - **Immutable**: Once a string is created, its value cannot be changed. Any modification creates a new string object.
@@ -21,6 +25,7 @@ In C#, a string is a sequence of characters enclosed in double quotes (""). It's
     ```
 
 ### string methods:
+
 - **Length:**
 
     returns the number of characters in a string.
@@ -99,9 +104,9 @@ In C#, a string is a sequence of characters enclosed in double quotes (""). It's
 String formatting is a technique used to create formatted strings by combining static text with dynamic values. It allows you to present data in a structured and readable way.
 
 ### Common string formatting methods:
-- Concatenation:
-- String.Format method:
-- Composite formatting:
+- [Concatenation](#concatenation)
+- [String.Format method](#String.format-mathod:)
+- [Composite formatting](#composite-formatting)
 
 ## Concatenation
 This involves using the `+` operator to combine strings and variables.
